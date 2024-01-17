@@ -4,10 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/Logo.png";
 import { useState, useEffect } from "react";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   const [backGround, setBackGround] = useState("bg-green-500");
   const [secBackGroud, setSecBackGround] = useState("bg-blue-500");
+  const [textClor, setTextColor] = useState("text-red-500")
   useEffect(() => {
     let interval = setInterval(() => {
       setBackGround((x) =>
@@ -19,14 +21,34 @@ export default function Home() {
         return x === "bg-blue-500" ? "bg-orange-500" : "bg-blue-500";
       });
     }, 1000);
+    let interval3 = setInterval(() => {
+      setTextColor((x) => {
+        return (x === "text-red-500" ? "text-green-500" : "text-red-500")
+      })
+    }, 500);
     return () => {
       clearInterval(interval);
       clearInterval(interval2);
+      clearInterval(interval3)
     };
   }, []);
 
   return (
     <main className="">
+      <Marquee
+        speed={60}
+        autoFill
+        pauseOnHover
+        className={`w-full justify-between items-center flex bg-black h-16 ${textClor} sticky`}
+      >
+        <div className=" md:space-x-24 space-x-8 flex flex-row text-xl font-bold font-mono mr-8 md:mr-24">
+          <Link href={"/jyoti"}>Jyoyi Indus</Link>
+          <div className=" ">Raju Malni</div>
+          <div>Unknown</div>
+          <div className=" ">Loop Last</div>
+        </div>
+      </Marquee>
+
       <div className="flex flex-col h-screen items-center justify-center ">
         <Image alt="sfs" src={logo} className="" />
         <p className=" text-xl font-medium font-serif text-center mb-10">
