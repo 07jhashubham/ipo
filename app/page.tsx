@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </Marquee>
 
-      <div className="flex flex-col h-screen items-center justify-center ">
+      <div className="flex flex-col h-screen items-center justify-center -mt-16">
         <Image alt="sfs" src={logo} className="" />
         <p className=" text-xl font-medium font-serif text-center mb-10">
           Get any Ipo details
