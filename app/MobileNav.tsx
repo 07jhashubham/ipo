@@ -17,7 +17,7 @@ export default function MobileNav() {
       <Link href={"/"} passHref>
         <div
           className={`flex flex-col items-center ${
-            value === 0 ? "text-green-500" : "text-gray-500"
+            value === 0 ? "text-black" : "text-gray-500"
           }`}
           onClick={() => handleClick(0)}
         >
@@ -28,7 +28,7 @@ export default function MobileNav() {
       <Link href={"/blogs"} passHref>
         <div
           className={`flex flex-col items-center ${
-            value === 1 ? "text-green-500" : "text-gray-500"
+            value === 1 ? "text-black" : "text-gray-500"
           }`}
           onClick={() => handleClick(1)}
         >
@@ -39,7 +39,7 @@ export default function MobileNav() {
       <Link href={"/search"} passHref>
         <div
           className={`flex flex-col items-center ${
-            value === 2 ? "text-green-500" : "text-gray-500"
+            value === 2 ? "text-black" : "text-gray-500"
           }`}
           onClick={() => handleClick(2)}
         >
@@ -50,7 +50,7 @@ export default function MobileNav() {
       <Link href={"/account"} passHref>
         <div
           className={`flex flex-col items-center ${
-            value === 3 ? "text-green-500" : "text-gray-500"
+            value === 3 ? "text-black" : "text-gray-500"
           }`}
           onClick={() => handleClick(3)}
         >
