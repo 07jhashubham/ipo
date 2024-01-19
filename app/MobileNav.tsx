@@ -13,7 +13,7 @@ export default function MobileNav() {
   }
 
   return (
-    <div className="w-full fixed bottom-0 left-0 z-10 flex flex-row justify-between px-4 text-sm">
+    <div className="w-full fixed pt-1 bg-white bottom-0 left-0 z-10 flex flex-row justify-between  px-4 text-sm">
       <Link href={"/"} passHref>
         <div
           className={`flex flex-col items-center ${
