@@ -1,5 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
+import Revenue from "./Revenue";
+import Profit from "./profit";
+import Balance from "./balanceSheet";
+import Holding from "./shareHolding";
 export default function Financial() {
   const [deskNa, setDeskNa] = useState("1");
   function handleNv(post: number) {
@@ -44,7 +48,18 @@ export default function Financial() {
           </div>
         </div>
       </div>
-      <div className={``}></div>
+      <div className={`${deskNa !== "1" && "hidden"} px-10`}>
+        <Revenue />
+      </div>
+      <div className={`${deskNa !== "2" && "hidden"}  px-10`}>
+        <Profit />
+      </div>
+      <div className={`${deskNa !== "3" && "hidden"}  px-10`}>
+        <Balance />
+      </div>
+      <div className={`${deskNa !== "4" && "hidden"}  px-10`}>
+        <Holding />
+      </div>
     </div>
   );
 }

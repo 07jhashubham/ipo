@@ -1,8 +1,8 @@
-export default function Revenue() {
+export default function Profit() {
   return (
     <div className="pb-5">
       <div className="mt-5 text-xl text-left font-semibold tracking-widest uppercase">
-        Revenue
+        Profit & loss
       </div>
     </div>
   );

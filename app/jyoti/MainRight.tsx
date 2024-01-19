@@ -17,7 +17,7 @@ export default function MainRight() {
               -1.80%
             </div>
           </div>
-          <div className=" text-xs text-wrap ">18 Jan - close price</div>
+          <div className=" text-xs text-wrap ">18 Jan - GMP</div>
         </div>
       </div>
       <Link

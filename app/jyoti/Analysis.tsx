@@ -1,5 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
+import Prepost from "./prePost";
+import Valuation from "./valuation";
+import Ratings from "./Ratings";
+import Gmp from "./gmp";
+
 export default function Analysis() {
   const [deskNa, setDeskNa] = useState("1");
   function handleNv(post: number) {
@@ -42,10 +47,20 @@ export default function Analysis() {
           >
             GMP History
           </div>
-          
         </div>
       </div>
-      <div className={``}></div>
+      <div className={`${deskNa !== "1" && "hidden"} px-10`}>
+        <Prepost />
+      </div>
+      <div className={`${deskNa !== "2" && "hidden"}  px-10`}>
+        <Valuation />
+      </div>
+      <div className={`${deskNa !== "3" && "hidden"}  px-10`}>
+        <Ratings />
+      </div>
+      <div className={`${deskNa !== "4" && "hidden"}  px-10`}>
+        <Gmp />
+      </div>
     </div>
   );
 }
