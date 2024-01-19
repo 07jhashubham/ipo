@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Revenue from "./Revenue";
 import Profit from "./profit";
 import Balance from "./balanceSheet";
-import Holding from "./shareHolding";
+import Holding from "./Summery";
 export default function Financial() {
   const [deskNa, setDeskNa] = useState("1");
   function handleNv(post: number) {
@@ -44,7 +44,7 @@ export default function Financial() {
               deskNa === "4" && "bg-black text-white"
             }`}
           >
-            Shareholdings
+            Summery
           </div>
         </div>
       </div>

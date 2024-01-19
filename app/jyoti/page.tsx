@@ -10,7 +10,7 @@ import Financial from "./Financial";
 import Revenue from "./Revenue";
 import Profit from "./profit";
 import Balance from "./balanceSheet";
-import Holding from "./shareHolding";
+import Holding from "./Summery";
 import Prepost from "./prePost";
 import Valuation from "./valuation";
 import Ratings from "./Ratings";
@@ -31,14 +31,13 @@ export default function Page() {
     setAlignment(newAlignment);
   };
 
-
   return (
     <div className="flex flex-col md:flex-row space-y-8 md:space-y-0">
       <div className="flex flex-col space-y-8 md:mb-10">
-        <div className=" mx-3 md:mx-5 border-4 bg-white border-gray-400 rounded-lg">
+        <div className=" mx-3 md:mx-5 md:border-4 border-2 bg-white border-gray-400 rounded-lg">
           <MainRight />
         </div>
-        <div className=" mx-3 md:mx-5 border-4 bg-white border-gray-400 rounded-lg">
+        <div className=" mx-3 md:mx-5 md:border-4 border-2 bg-white border-gray-400 rounded-lg">
           <MainBottom />
         </div>
       </div>
@@ -63,14 +62,14 @@ export default function Page() {
           </div>
         </div>
         <div
-          className={`mx-3 md:mx-5 border-4 bg-white flex-1 border-gray-400 md:max-h-[630px] rounded-lg ${
+          className={`mx-3 md:mx-5 md:border-4 border-2 bg-white flex-1 border-gray-400 md:max-h-[630px] rounded-lg ${
             activeSection !== "financial" && "hidden"
           }`}
         >
           <Financial />
         </div>
         <div
-          className={`mx-3 md:mx-5 border-4 bg-white flex-1 border-gray-400 md:max-h-[630px] rounded-lg ${
+          className={`mx-3 md:mx-5 md:border-4 border-2 bg-white flex-1 border-gray-400 md:max-h-[630px] rounded-lg ${
             activeSection !== "analysis" && "hidden"
           }`}
         >
@@ -92,56 +91,56 @@ export default function Page() {
       <div
         className={` mx-5 my-2 ${
           alignment !== "finance" && "hidden"
-        } overflow-hidden border-4 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
+        } overflow-hidden md:border-4 border-2 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
       >
         <Revenue />
       </div>
       <div
         className={` mx-5 my-2 ${
           alignment !== "finance" && "hidden"
-        } overflow-hidden border-4 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
+        } overflow-hidden md:border-4 border-2 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
       >
         <Profit />
       </div>
       <div
         className={` mx-5 my-2 ${
           alignment !== "finance" && "hidden"
-        } overflow-hidden border-4 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
+        } overflow-hidden md:border-4 border-2 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
       >
         <Balance />
       </div>
       <div
         className={` mx-5 my-2 ${
           alignment !== "finance" && "hidden"
-        } overflow-hidden border-4 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
+        } overflow-hidden md:border-4 border-2 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
       >
         <Holding />
       </div>
       <div
         className={` mx-5 my-2 ${
           alignment !== "analysis" && "hidden"
-        } overflow-hidden border-4 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
+        } overflow-hidden md:border-4 border-2 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
       >
         <Prepost />
       </div>
       <div
         className={` mx-5 my-2 ${
           alignment !== "analysis" && "hidden"
-        } overflow-hidden border-4 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
+        } overflow-hidden md:border-4 border-2 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
       >
         <Valuation />
       </div>
       <div
         className={` mx-5 my-2 ${
           alignment !== "analysis" && "hidden"
-        } overflow-hidden border-4 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
+        } overflow-hidden md:border-4 border-2 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
       >
         <Ratings />
       </div>
       <div
         className={` mx-5 my-2 ${
           alignment !== "analysis" && "hidden"
-        } overflow-hidden border-4 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
+        } overflow-hidden md:border-4 border-2 md:hidden px-4 bg-white md:w-full border-gray-400 rounded-lg `}
       >
         <Gmp />
       </div>
