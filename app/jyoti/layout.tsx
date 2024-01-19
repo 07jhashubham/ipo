@@ -31,9 +31,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           className={` md:space-x-24 space-x-8 flex flex-row text-xl mr-8 md:mr-24 ${oswald}`}
         >
           <Link href={"/jyoti"}>Jyoyi Indus</Link>
-          <div className=" ">Raju Malni</div>
-          <div>Unknown</div>
-          <div className=" ">Loop Last</div>
+          <div className=" ">Reliance</div>
+          <div>Manakasia</div>
+          <div className=" ">Sahara</div>
         </div>
       </Marquee>
       <DeskNav />

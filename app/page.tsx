@@ -55,9 +55,9 @@ export default function Home() {
           className={` md:space-x-24 space-x-8 flex flex-row text-xl mr-8 md:mr-24 ${oswald}`}
         >
           <Link href={"/jyoti"}>Jyoyi Indus</Link>
-          <div className=" ">Raju Malni</div>
-          <div>Unknown</div>
-          <div className=" ">Loop Last</div>
+          <div className=" ">Reliance</div>
+          <div>Manakasia</div>
+          <div className=" ">Sahara</div>
         </div>
       </Marquee>
       <DeskNav />
@@ -80,13 +80,13 @@ export default function Home() {
             </Link>
 
             <p className="text-center border truncate hover:shadow-lg hover:bg-gray-200 bg-black text-white hover:text-black hover:translate-x-0.5 transition-all hover:rounded-xl  duration-200 border-gray-400 rounded-lg py-1 md:py-2 text-lg md:text-xl ">
-              Unknown
+              Reliance
             </p>
             <p className="text-center border truncate hover:shadow-lg hover:bg-gray-200 bg-black text-white hover:text-black hover:translate-x-0.5 transition-all hover:rounded-xl  duration-200 border-gray-400 rounded-lg py-1 md:py-2 text-lg md:text-xl ">
-              Raju Malni
+              Manakasia
             </p>
             <p className="text-center border truncate hover:shadow-lg hover:bg-gray-200 bg-black py-1 md:py-2  text-white hover:text-black hover:translate-x-0.5 transition-all hover:rounded-xl  duration-200 border-gray-400 rounded-lg text-lg md:text-xl ">
-              Loop Last
+              Sahara
             </p>
           </div>
         </div>
@@ -104,13 +104,13 @@ export default function Home() {
               Jyoti Tyers
             </Link>
             <p className="text-center border truncate hover:shadow-lg hover:bg-gray-200 py-1 md:py-2 bg-black text-white hover:text-black hover:translate-x-0.5 transition-all hover:rounded-xl  duration-200 border-gray-400 rounded-lg text-lg md:text-xl ">
-              Unknown
+              Reliance
             </p>
             <p className="text-center border truncate hover:shadow-lg hover:bg-gray-200 py-1 md:py-2 bg-black text-white hover:text-black hover:translate-x-0.5 transition-all roun hover:rounded-xl  duration-200 border-gray-400 rounded-lg text-lg md:text-xl ">
-              Raju Malni
+              Manakasia
             </p>
             <p className="text-center border truncate hover:shadow-lg hover:bg-gray-200 py-1 md:py-2 bg-black text-white hover:text-black hover:translate-x-0.5 transition-all hover:rounded-xl  duration-200 border-gray-400 rounded-lg text-lg md:text-xl ">
-              Loop Last
+              Sahara
             </p>
           </div>
         </div>
